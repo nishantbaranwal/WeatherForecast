@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">WeatherForecast</string>
+    <string name="connect_gone">Connection Problem!!</string>
+</resources>

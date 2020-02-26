@@ -1,0 +1,260 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D3D3D3"
+
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/txt_error"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/connect_gone"
+            android:visibility="gone"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/place_holder"
+                android:id="@+id/weatherIconImageView1"
+                />
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Tomorrow"
+                android:textColor="#ffffff"
+                android:background="@android:drawable/dialog_holo_dark_frame"
+                android:gravity="center"/>
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/temperatureTextView1"
+                android:textColor="#ffffff"
+                android:background="@android:drawable/dialog_holo_dark_frame"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/conditionTextView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:background="@android:drawable/dialog_holo_dark_frame"
+                android:gravity="center"/>
+
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textColor="#ffffff"
+                android:background="@android:drawable/dialog_holo_dark_frame"
+                android:id="@+id/locationTextView1"
+                android:gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+
+                android:src="@drawable/place_holder"
+                android:id="@+id/weatherIconImageView2"
+                />
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="3rd Day"
+                android:textColor="#ffffff"
+                android:background="@android:drawable/dialog_holo_dark_frame"
+                android:gravity="center"/>
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/temperatureTextView2"
+                android:textColor="#ffffff"
+                android:background="@android:drawable/dialog_holo_dark_frame"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/conditionTextView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:background="@android:drawable/dialog_holo_dark_frame"
+                android:gravity="center"/>
+
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textColor="#ffffff"
+                android:background="@android:drawable/dialog_holo_dark_frame"
+                android:id="@+id/locationTextView2"
+                android:gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+
+                android:src="@drawable/place_holder"
+                android:id="@+id/weatherIconImageView3"
+                />
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="4th Day"
+                android:textColor="#ffffff"
+                android:background="@android:drawable/dialog_holo_dark_frame"
+                android:gravity="center"/>
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/temperatureTextView3"
+                android:textColor="#ffffff"
+                android:background="@android:drawable/dialog_holo_dark_frame"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/conditionTextView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:background="@android:drawable/dialog_holo_dark_frame"
+                android:gravity="center"/>
+
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textColor="#ffffff"
+                android:background="@android:drawable/dialog_holo_dark_frame"
+                android:id="@+id/locationTextView3"
+                android:gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+            <ImageView android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+
+                android:src="@drawable/place_holder"
+                android:id="@+id/weatherIconImageView4"
+                />
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="5th Day"
+                android:textColor="#ffffff"
+                android:background="@android:drawable/dialog_holo_dark_frame"
+                android:gravity="center"/>
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/temperatureTextView4"
+                android:textColor="#ffffff"
+                android:background="@android:drawable/dialog_holo_dark_frame"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/conditionTextView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:background="@android:drawable/dialog_holo_dark_frame"
+                android:gravity="center"/>
+
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textColor="#ffffff"
+                android:background="@android:drawable/dialog_holo_dark_frame"
+                android:id="@+id/locationTextView4"
+                android:gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/place_holder"
+                android:id="@+id/weatherIconImageView5"
+                />
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="6th Day"
+                android:textColor="#ffffff"
+                android:background="@android:drawable/dialog_holo_dark_frame"
+                android:gravity="center"/>
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/temperatureTextView5"
+                android:textColor="#ffffff"
+                android:background="@android:drawable/dialog_holo_dark_frame"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/conditionTextView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:background="@android:drawable/dialog_holo_dark_frame"
+                android:gravity="center"/>
+
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textColor="#ffffff"
+                android:background="@android:drawable/dialog_holo_dark_frame"
+                android:id="@+id/locationTextView5"
+                android:gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/place_holder"
+                android:id="@+id/weatherIconImageView6"
+                />
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="7th Day"
+                android:textColor="#ffffff"
+                android:background="@android:drawable/dialog_holo_dark_frame"
+                android:gravity="center"/>
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/temperatureTextView6"
+                android:textColor="#ffffff"
+                android:background="@android:drawable/dialog_holo_dark_frame"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/conditionTextView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:background="@android:drawable/dialog_holo_dark_frame"
+                android:gravity="center"/>
+
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textColor="#ffffff"
+                android:background="@android:drawable/dialog_holo_dark_frame"
+                android:id="@+id/locationTextView6"
+                android:gravity="center"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
