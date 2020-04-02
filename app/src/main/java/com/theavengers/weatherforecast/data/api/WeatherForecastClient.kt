@@ -1,6 +1,5 @@
 package com.theavengers.weatherforecast.data.api
 
-import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
@@ -13,8 +12,8 @@ const val BASE_URL = "http://api.openweathermap.org/data/2.5/forecast/2.5/foreca
 
 object WeatherForecastClient {
     fun getClient(): WeatherForecastInterface{
-        val interceptor : HttpLoggingInterceptor = HttpLoggingInterceptor()
-        interceptor.setLevel(HttpLoggingInterceptor.Level.BODY)
+        val interceptor = HttpLoggingInterceptor()
+        interceptor.level = HttpLoggingInterceptor.Level.BODY
         val okHttpClient : OkHttpClient = OkHttpClient.Builder().addInterceptor(interceptor).build()
         val retrofit = Retrofit.Builder().client(okHttpClient).addCallAdapterFactory(RxJava2CallAdapterFactory.create())
             .addConverterFactory(GsonConverterFactory.create()).baseUrl("https://api.openweathermap.org/").build()

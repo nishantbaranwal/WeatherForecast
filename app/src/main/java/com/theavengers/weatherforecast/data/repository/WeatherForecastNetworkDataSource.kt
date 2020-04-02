@@ -20,6 +20,7 @@ class WeatherForecastNetworkDataSource(private val apiService: WeatherForecastIn
     val downloadedWeatherForecastDetailsResponse : LiveData<WeatherForecastDetails>
         get() = _downloadedWeatherForecastDetailsResponse
 
+    @Suppress("NULLABILITY_MISMATCH_BASED_ON_JAVA_ANNOTATIONS")
     fun fetchWeatherForecastDetails(movieId: Int){
 
         _networkState.postValue(NetworkState.LOADING)
@@ -33,7 +34,6 @@ class WeatherForecastNetworkDataSource(private val apiService: WeatherForecastIn
                     },
                         {
                             _networkState.postValue(NetworkState.ERROR)
-                            Log.d("WeatherForecastDetails", it.message)
                         })
             )
         }
